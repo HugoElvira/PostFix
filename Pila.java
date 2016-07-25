@@ -5,9 +5,8 @@ import java.util.Vector;
  */
 
 /**
- * @author Pc
- * @param <E>
- *
+ * @author Grupo 8 Hugo Elvira, Dieter de Wit, Gerardo Cardoza
+ * @version 25/07/2016
  */
 public  class Pila<E> implements I_Stack<E>{
 	

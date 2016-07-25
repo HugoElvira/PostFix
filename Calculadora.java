@@ -6,8 +6,8 @@ import java.io.FileReader;
  */
 
 /**
- * @author Pc
- *
+ * @author Grupo 8 Hugo Elvira, Dieter de Wit, Gerardo Cardoza
+ * @version 25/07/2016
  */
 public class Calculadora implements I_Calculadora{
 
@@ -49,6 +49,12 @@ public class Calculadora implements I_Calculadora{
 				total = (int)pila.Pop() / (int)pila.Pop();
 				pila.Push(total);
 				break;
+				
+				
+			case "-":
+				total = -(int)pila.Pop() + (int)pila.Pop();
+				pila.Push(total);
+				break;
 			}
 		}
 		}
@@ -69,13 +75,10 @@ public class Calculadora implements I_Calculadora{
 		String operacion = "";
 		try{
 			BufferedReader direc = new BufferedReader(new FileReader(direccion));
-			String x = "";
 			String leer;
 			while((leer = direc.readLine()) != null){
-				x = x + leer;				
+				operacion = operacion + leer;				
 			}
-			
-		operacion = x;
 		
 		}
 		catch(Exception e){

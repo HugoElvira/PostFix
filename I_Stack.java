@@ -3,10 +3,11 @@
  */
 
 /**
- * @author Pc
+ * @author Grupo 8 Hugo Elvira, Dieter de Wit, Gerardo Cardoza
+ * @version 25/07/2016
  * @param <E>
- *
  */
+
 public interface I_Stack<E> {
 	
 	public void Push(E element);
