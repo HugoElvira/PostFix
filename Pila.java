@@ -11,17 +11,24 @@ import java.util.Vector;
  */
 public  class Pila<E> implements I_Stack<E>{
 	
-	 Vector<E> miPila=new Vector<E>();
+	private Vector<E> miPila;
+	
+	/**
+	 * @descripcion: Constructor
+	 */
+	public Pila() {
+	  miPila=new Vector<E>();
+		}
 	 
 	
 	@Override
-	public void push(E element){
+	public void Push(E element){
 		miPila.addElement(element);
 	}
 	
 	
 	@Override
-	public E pop(){
+	public E Pop(){
 		E x= (E) miPila.lastElement();
 		miPila.remove(miPila.lastElement());
 		return x;
@@ -31,14 +38,16 @@ public  class Pila<E> implements I_Stack<E>{
 
 	@Override
 	public boolean IsEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		boolean y;
+		if(miPila.size()==0){y=true;}
+		else {y=true;}
+		return y;
 	}
 
 	@Override
 	public int Size() {
-		// TODO Auto-generated method stub
-		return 0;
+		int tam=miPila.size();
+		return tam;
 	}
 
 	@Override

@@ -9,8 +9,8 @@
  */
 public interface I_Stack<E> {
 	
-	public void push(E element);
-	public E pop();
+	public void Push(E element);
+	public E Pop();
 	public boolean IsEmpty();
 	public int Size();
 	public E get();
