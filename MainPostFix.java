@@ -19,6 +19,7 @@ public class MainPostFix {
 	}
 
 	/**
+	 * @descripcion: permite una interaz entre el usuario y el computador
 	 * @param args
 	 */
 	public static void main(String[] args) {

@@ -19,13 +19,17 @@ public  class Pila<E> implements I_Stack<E>{
 	  miPila=new Vector<E>();
 		}
 	 
-	
+	/**
+	 * @descripcion: push, inserta elemento en pila
+	 */
 	@Override
 	public void Push(E element){
 		miPila.addElement(element);
 	}
 	
-	
+	/**
+	 * @descripcion: pop, extrae ultimo elemento en pila y lo elimina de la misma
+	 */
 	@Override
 	public E Pop(){
 		E x= (E) miPila.lastElement();
@@ -34,7 +38,9 @@ public  class Pila<E> implements I_Stack<E>{
 	}
 
 
-
+	/**
+	 * @descripcion: indica true si la pila esta vacia o false en caso contrario
+	 */
 	@Override
 	public boolean IsEmpty() {
 		boolean y;
@@ -42,7 +48,10 @@ public  class Pila<E> implements I_Stack<E>{
 		else {y=true;}
 		return y;
 	}
-
+	
+	/**
+	 * @descripcion: devuelve el tamaño de la pila
+	 */
 	@Override
 	public int Size() {
 		int tam=miPila.size();
