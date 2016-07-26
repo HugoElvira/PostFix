@@ -6,8 +6,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author GerardoEnrique
+ * @author Grupo 8 Hugo Elvira, Dieter de Wit, Gerardo Cardoza
+ * @version 25/07/2016
  */
 public class CalculadoraTest {
     
